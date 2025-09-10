@@ -5,11 +5,6 @@
     align-items: flex-start;
 }
 
-.jogos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
-}
 
 .jogo {
     background: #f5f5f5;
@@ -77,18 +72,22 @@
 
 .banner {
   width: 100%;
-  margin: 0 auto;
-  margin-top: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.banner-img {
+.banner img {
   width: 100%;
-  max-width: 1200px;
-  border-radius: 6px;
 
   max-height: 400px;
-  object-fit: cover;
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+.ultimas-chances-banner {
+    width: 100%;
+    max-width: none;
+    margin: 32px 0;
+}
+.ultimas-chances-banner img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
 }
