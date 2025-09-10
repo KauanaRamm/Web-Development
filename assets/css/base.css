@@ -38,7 +38,7 @@ General Styles
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  max-width: 1140px; /* adjust for breakpoints if needed */
+  max-width: 1200px; /* adjust for breakpoints if needed */
 }
 
 .row {
