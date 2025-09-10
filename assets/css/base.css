@@ -1,3 +1,9 @@
+/*
+
+General Styles
+
+*/
+
 body {
   margin: 0;
   padding: 0;
@@ -7,16 +13,6 @@ body {
   min-height: 100vh;
 }
 
-.logo {
-  font-size: 1.3rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -52,6 +48,16 @@ body {
   box-sizing: border-box;
 }
 
+/* 
+  Navbar Styles
+*/
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
 .navbar {
   width: 100%;
   background: #fff;
@@ -61,6 +67,7 @@ body {
   border-bottom: 4px solid #ff69b4;
   box-shadow: 0 2px 8px rgba(255, 105, 180, 0.08);
 }
+
 .navbar-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -70,6 +77,7 @@ body {
   width: 100%;
   padding: 0;
 }
+
 .navbar .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -82,6 +90,7 @@ body {
   box-shadow: none;
   border: none;
 }
+
 .navbar a {
   color: #222;
   text-decoration: none;
@@ -89,6 +98,44 @@ body {
   font-weight: 500;
   transition: color 0.2s;
 }
+
 .navbar a:hover {
   color: #ff69b4;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 430px) {
+  .navbar-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar a {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Remove dropdown styles for mobile */
+  .navbar .dropdown,
+  .navbar .dropdown-toggle,
+  .navbar .dropdown-menu {
+    display: none !important;
+  }
 }
