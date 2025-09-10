@@ -1,0 +1,129 @@
+.banner {
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+
+  max-height: 400px;
+  object-fit: cover;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+.destaque h2, .mais-vendidos h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+/*
+ Destaque CSS
+*/
+.game-card {
+  border-radius:0 0 5px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 220px;
+  height: 250px;
+  text-decoration: none;
+  color: inherit;
+}
+.game-img {
+  width: 100%;
+  height:50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px 5px 0 0;
+}
+.game-content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+}
+.game-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 1rem 0 0.2rem 1rem;
+  color: #222;
+}
+.game-info {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0 0 0.5rem 1rem;
+  display: flex;
+  gap: 1.2rem;
+}
+.game-price {
+  font-size: 1.1rem;
+  color: #e48bb2;
+  font-weight: bold;
+  margin: 0.5rem 1rem 1rem auto;
+}
+
+/*
+  Lista de Jogos CSS
+  */
+
+.games-list {
+  border: 1px solid #e51566;
+}
+
+.game-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #e51566;
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.game-list-item:hover {
+  background: #fbeaf2;
+}
+
+.games-list .game-list-item:last-child {
+  border-bottom: none;
+}
+
+.game-list-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.game-list-item .game-title {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.game-list-item .game-price {
+  color: #ff69b4;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.game-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem 1rem;
+}
+.game-tags span {
+  background: #f5f5f5;
+  color: #ff69b4;
+  font-size: 0.85rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
