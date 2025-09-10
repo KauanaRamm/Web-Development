@@ -1,0 +1,134 @@
+/* Navbar layout: logo left, links right */
+.navbar {
+  width: 100%;
+  background: #fff;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem 1rem 2rem;
+  font-size: 1.15rem;
+  border-bottom: 1.5px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-links a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0.2rem 0.5rem;
+}
+.nav-links a:hover {
+  color: #e48bb2;
+}
+.banner {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner img {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 6px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.destaque h2, .mais-vendidos h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.game-card {
+  background: #fff;
+  border: 2px solid #e48bb2;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(255, 105, 180, 0.08);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  min-width: 220px;
+}
+.game-img {
+  width: 100%;
+  aspect-ratio: 2/1;
+  display: block;
+}
+.game-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 1rem 0 0.2rem 1rem;
+  color: #222;
+}
+.game-info {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0 0 0.5rem 1rem;
+  display: flex;
+  gap: 1.2rem;
+}
+.game-price {
+  font-size: 1.1rem;
+  color: #e48bb2;
+  font-weight: bold;
+  margin: 0.5rem 1rem 1rem auto;
+}
+.games-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+.game-list-item {
+  background: #fff;
+  border: 1px solid #ffb6d5;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(255, 105, 180, 0.05);
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.game-list-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.game-list-item .game-title {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.game-list-item .game-price {
+  color: #ff69b4;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
