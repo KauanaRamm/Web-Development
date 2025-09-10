@@ -4,6 +4,50 @@ General Styles
 
 */
 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 1140px; /* adjust for breakpoints if needed */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,42 +56,41 @@ body {
   color: #222;
   min-height: 100vh;
 }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #ffd700;
-}
-
+/* Column */
 .col {
-  flex: 1;
-  padding: 10px;
+  flex: 1 0 0%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.col-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
-  box-sizing: border-box;
-}
+/* Column sizes (out of 12) */
+.col-1  { flex: 0 0 8.3333%;  max-width: 8.3333%; }
+.col-2  { flex: 0 0 16.6667%; max-width: 16.6667%; }
+.col-3  { flex: 0 0 25%;      max-width: 25%; }
+.col-4  { flex: 0 0 33.3333%; max-width: 33.3333%; }
+.col-5  { flex: 0 0 41.6667%; max-width: 41.6667%; }
+.col-6  { flex: 0 0 50%;      max-width: 50%; }
+.col-7  { flex: 0 0 58.3333%; max-width: 58.3333%; }
+.col-8  { flex: 0 0 66.6667%; max-width: 66.6667%; }
+.col-9  { flex: 0 0 75%;      max-width: 75%; }
+.col-10 { flex: 0 0 83.3333%; max-width: 83.3333%; }
+.col-11 { flex: 0 0 91.6667%; max-width: 91.6667%; }
+.col-12 { flex: 0 0 100%;     max-width: 100%; }
 
-.col-4 {
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
-  box-sizing: border-box;
-  background: blue;
+@media (max-width: 600px) {
+  .col-mob-1  { flex: 0 0 8.3333%;  max-width: 8.3333%; }
+  .col-mob-2  { flex: 0 0 16.6667%; max-width: 16.6667%; }
+  .col-mob-3  { flex: 0 0 25%;      max-width: 25%; }
+  .col-mob-4  { flex: 0 0 33.3333%; max-width: 33.3333%; }
+  .col-mob-5  { flex: 0 0 41.6667%; max-width: 41.6667%; }
+  .col-mob-6  { flex: 0 0 50%;      max-width: 50%; }
+  .col-mob-7  { flex: 0 0 58.3333%; max-width: 58.3333%; }
+  .col-mob-8  { flex: 0 0 66.6667%; max-width: 66.6667%; }
+  .col-mob-9  { flex: 0 0 75%;      max-width: 75%; }
+  .col-mob-10 { flex: 0 0 83.3333%; max-width: 83.3333%; }
+  .col-mob-11 { flex: 0 0 91.6667%; max-width: 91.6667%; }
+  .col-mob-12 { flex: 0 0 100%;     max-width: 100%; }
 }
-
-.col-3 {
-  flex: 0 0 25%;
-  max-width: 25%;
-  box-sizing: border-box;
-}
-
 /* 
   Navbar Styles
 */
