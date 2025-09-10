@@ -1,15 +1,11 @@
 .banner {
   width: 100%;
-  margin: 0 auto;
-  margin-top: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .banner img {
   width: 100%;
-  max-width: 1200px;
-  border-radius: 6px;
+
+  max-height: 400px;
+  object-fit: cover;
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
 }
 main {
@@ -30,21 +26,32 @@ main {
   margin-bottom: 2.5rem;
 }
 .game-card {
-  background: #fff;
-  border: 2px solid #e48bb2;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(255, 105, 180, 0.08);
+  border-radius:0 0 5px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   overflow: hidden;
   min-width: 220px;
+  height: 250px;
+  text-decoration: none;
+  color: inherit;
 }
 .game-img {
   width: 100%;
-  aspect-ratio: 2/1;
-  display: block;
+  height:50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px 5px 0 0;
+}
+.game-content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
 }
 .game-title {
   font-size: 1.1rem;
