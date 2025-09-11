@@ -7,36 +7,30 @@
             background-color: white;
             }
 
-            h1 {
-                font-size: 40px;
-                margin: 30px;
-            }
-
             h2 {
                 font-size: 30px;
                 padding: 10px;
             }
 
             .botao {
-                font-size: 35px;
+                font-size: 30px;
                 text-align-last: center; 
                 border: 1px solid gray;
                 background-color: #EEB1D5;
+                padding: 5px 20px;
+                border-radius: 4px;
                 width: auto;
                 align-self: center;
                 text-decoration: none;
                 align-content: center;
                 
             }
-            a:visited {
-                color: black;
-            }
             td{
                 border: 1px solid gray;
-                background-color: #f8f4f4;
-                padding: 5px;
-                font-size: 25px;
-                color:#EEB1D5
+                background-color: #fff;
+                padding: 10px;
+                font-size: 20px;
+                color:#e51566;
             }
 
             td, button:hover {
@@ -49,20 +43,14 @@
             
         }
         
-        #grid {
-                display: grid;
-                grid-template-columns: 700px 700px;
-                background-color: white;                
-            }
+       
 
-            #grid > .col {
-                background-color: #f8f4f4;
-                font-size: 21px;
-                padding: 10px;
-                border: 1px solid gray;
-                border-collapse: collapse;
-                margin: 10px auto;
-                width: 80%;
-                max-width: 600px;
-            }
-            
+        .col {
+            background-color: #fff;
+            font-size: 18px;
+            padding: 20px;
+            border: 1px solid gray;
+            border-collapse: collapse;
+            margin: 20px;
+        }
+        
