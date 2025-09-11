@@ -93,4 +93,24 @@ body {
   .navbar a:hover {
     color: #ff69b4;
   }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+    padding: 40px;
+}
+/* ...existing code... */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+.card img {
+    width: 64px;
+    margin-bottom: 16px;
+}
   
