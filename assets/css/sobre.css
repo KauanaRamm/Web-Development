@@ -1,4 +1,3 @@
-
 .banner {
     background: url('https://img.odcdn.com.br/wp-content/uploads/2025/07/vocabulario-minecraft-expressoes-jogar-1920x1080.jpg') no-repeat center;
     background-size: cover;
@@ -22,7 +21,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-      color: #333;
+    color: #333;
 }
 
 .features-grid {
@@ -38,14 +37,15 @@
     border-radius: 8px;
     font-size: 14px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      color: #333;
+    color: #333;
+    min-height: 330px;
 }
 
 .feature h2 {
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: bold;
-      color: #333;
+    color: #333;
 }
 
 .feature h3 {
@@ -73,4 +73,14 @@
 
 .site-footer {
     margin-top: 200px;
+}
+
+@media (max-width: 600px) {
+    .features-section .title {
+        font-size: 35px;
+    }
+    .features-section .subtitle {
+        width: 100%;
+        font-size: 18px;
+    }
 }

@@ -162,3 +162,9 @@ body {
     position: fixed;
     top:0;
 }
+
+@media (max-width: 600px) {
+    .container {
+        margin-top: 400px;
+    }
+}
