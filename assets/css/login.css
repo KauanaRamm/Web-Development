@@ -167,4 +167,8 @@ body {
     .container {
         margin-top: 400px;
     }
+    .navbar {
+        position: absolute;
+        top:0;
+    }
 }
