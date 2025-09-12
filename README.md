@@ -46,4 +46,4 @@ Este projeto é uma loja de jogos fictícia desenvolvida a partir de uma propost
 
 # Licença
 
-Este projeto está sob a licença MIT. Sinta-se livre para usar e modificar.
+Este projeto está sob a licença MIT. Sinta-se livre para usar e modificar. 
