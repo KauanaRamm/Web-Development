@@ -167,3 +167,10 @@ tbody tr:last-child {
     font-size: 1.2em;
     color: #fff;
 }
+.banner-novo {
+    background-image: url('../images/Age.jpg');
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
