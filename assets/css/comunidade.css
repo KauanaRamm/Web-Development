@@ -1,0 +1,212 @@
+body {
+    background-color:rgb(226, 189, 207);
+    color: #c7d5e0;
+    margin: 0;
+}
+
+
+
+
+
+
+.container {
+    padding: 20px 10%;
+}
+
+
+.content-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+
+.sort-options .btn {
+    background-color: #2a475e;
+    color: #66c0f4;
+    border: none;
+    padding: 8px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+
+.sort-options .btn.active {
+    background-color: #66c0f4;
+    color: #1b2838;
+}
+
+
+/* Análises */
+.reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+.review-card {
+    background-color: #171a21;
+    border-radius: 4px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.review-meta {
+    font-size: 12px;
+    color: #8f98a2;
+    margin-bottom: 10px;
+}
+
+
+.review-meta p {
+    margin: 0;
+}
+
+
+.helpful-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #62a3d0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+
+.icon-thumb {
+    width: 20px;
+    height: 20px;
+    fill: #62a3d0;
+    margin-right: 5px;
+}
+
+
+.review-content .tag {
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+
+.review-content .recommended {
+    background-color: #5a275c;
+    color: #bb66f4;
+}
+
+
+.review-content .hours {
+    font-size: 12px;
+    color: #8f98a2;
+}
+
+
+.review-content .published {
+    font-size: 12px;
+    color: #4f738f;
+    margin-top: 5px;
+}
+
+
+.review-content .text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.review-content .game-info {
+    font-size: 12px;
+    color: #62a3d0;
+    margin-top: 10px;
+}
+
+
+.comments {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 12px;
+    color: #8f98a2;
+    border: 1px solid #4f738f;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+
+/* Guias e Vídeos */
+.guides-and-videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.card {
+    background-color: #171a21;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-image {
+    width: 100%;
+    height: 120px; /* Ajuste para manter a proporção da imagem */
+    object-fit: cover;
+}
+
+
+.card-info {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+
+.card-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.card-subtitle {
+    font-size: 12px;
+    color: #62a3d0;
+    margin: 5px 0 10px;
+}
+
+
+.guide-text {
+    font-size: 12px;
+    color: #8f98a2;
+    margin: 0;
+    line-height: 1.4;
+}
+
+
+.guide-stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    color: #8f98a2;
+    margin-top: 10px;
+}
+
+
+.rating {
+    color: #ffd700;
+}
