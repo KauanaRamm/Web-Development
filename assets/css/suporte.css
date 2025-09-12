@@ -67,13 +67,14 @@ body {
     box-shadow: 0 2px 8px rgba(255, 105, 180, 0.08);
   }
   .navbar-content {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 0;
+    gap: 24px; /* Espaço entre os itens */
   }
   .navbar .container {
     max-width: 1200px;
@@ -93,6 +94,8 @@ body {
     margin: 0 1.2rem;
     font-weight: 500;
     transition: color 0.2s;
+    
+
   }
   .navbar a:hover {
     color: #ff69b4;
@@ -120,27 +123,28 @@ body {
 
 .search-bar {
     width: 100%;
-    background: #fff;
-    padding: 24px 0;
+    background: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 0;
+    width: auto;
     display: flex;
-    justify-content: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    margin-bottom: 24px;
+    align-items: center;
 }
 .search-bar form {
     display: flex;
     gap: 8px;
 }
 .search-bar input[type="text"] {
-    padding: 10px 16px;
+    padding: 8px 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1rem;
-    width: 280px;
+    width: 180px;
     
   }
 .search-bar button {
-    padding: 10px 20px;
+    padding: 8px 16px;
     background: #802BDB;
     color: #fff;
     border: none;
