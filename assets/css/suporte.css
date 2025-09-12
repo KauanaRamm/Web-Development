@@ -1,112 +1,7 @@
 body {
-    margin: 0;
-    background-color: #802BDB;
-    padding: 0;
-    font-family: 'Inter', Arial, sans-serif;
-
-    color: #222;
-    min-height: 100vh;
-  }
-  
-  .logo {
-    font-size: 1.3rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-  }
-  .container {
-    max-width: 1350px;
-    margin: 0 auto;
-    background: url("https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-b664-61f7-9d82-778f561b5aba/raw?se=2025-09-12T04%3A29%3A40Z&sp=r&sv=2024-08-04&sr=b&scid=3be512c7-715d-5f08-b3f3-327527bface6&skoid=24a7dec3-38fc-4904-b888-8abe0855c442&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-11T05%3A26%3A09Z&ske=2025-09-12T05%3A26%3A09Z&sks=b&skv=2024-08-04&sig=MS0VaJCEHMs15gsCEA2%2BneT97PARLk5s4ZBABkLUGIs%3D");
-    background-size: cover;
-    background-position: center;
-  }
-  
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #ffd700;
-  }
-  
-  .col {
-    flex: 1;
-    padding: 10px;
-  }
-  
-  .col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    box-sizing: border-box;
-  }
-  
-  .col-4 {
-    flex: 0 0 33.3333%;
-    max-width: 33.3333%;
-    box-sizing: border-box;
-    background: blue;
-  }
-  
-  .col-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-    box-sizing: border-box;
-  }
-  
-  .navbar {
-    width: 100%;
-    background: #fff;
-    color: #222;
-    padding: 1.5rem 0;
-    font-size: 1.15rem;
-    border-bottom: 4px solid #ff69b4;
-    box-shadow: 0 2px 8px rgba(255, 105, 180, 0.08);
-  }
-  .navbar-content {
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    gap: 24px; /* Espaço entre os itens */
-  }
-  .navbar .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    background: none;
-    box-shadow: none;
-    border: none;
-  }
-  .navbar a {
-    color: #222;
-    text-decoration: none;
-    margin: 0 1.2rem;
-    font-weight: 500;
-    transition: color 0.2s;
-    
-
-  }
-  .navbar a:hover {
-    color: #ff69b4;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);;
-    gap: 32px;
-    padding: 40px;
+  background-color: #802BDB;
 }
+
 .card {
     background: #fff;
     border-radius: 12px;
@@ -118,7 +13,6 @@ body {
 .card img {
     width: 150px;
     height: auto;
-    margin-bottom: 75px;
 }
 
 .search-bar {
@@ -140,7 +34,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1rem;
-    width: 180px;
+    height:55px;
+    width: 450px;
     
   }
 .search-bar button {
@@ -155,4 +50,13 @@ body {
 }
 .search-bar button:hover {
     background: #5e1fa1;
+}
+.banner {
+  background-image: url("../images/suporte_banner.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
