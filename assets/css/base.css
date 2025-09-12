@@ -1,0 +1,226 @@
+/*
+
+General Styles
+
+*/
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 1200px; /* adjust for breakpoints if needed */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  min-height: 100vh;
+}
+/* Column */
+.col {
+  flex: 1 0 0%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Column sizes (out of 12) */
+.col-1  { flex: 0 0 8.3333%;  max-width: 8.3333%; }
+.col-2  { flex: 0 0 16.6667%; max-width: 16.6667%; }
+.col-3  { flex: 0 0 25%;      max-width: 25%; }
+.col-4  { flex: 0 0 33.3333%; max-width: 33.3333%; }
+.col-5  { flex: 0 0 41.6667%; max-width: 41.6667%; }
+.col-6  { flex: 0 0 50%;      max-width: 50%; }
+.col-7  { flex: 0 0 58.3333%; max-width: 58.3333%; }
+.col-8  { flex: 0 0 66.6667%; max-width: 66.6667%; }
+.col-9  { flex: 0 0 75%;      max-width: 75%; }
+.col-10 { flex: 0 0 83.3333%; max-width: 83.3333%; }
+.col-11 { flex: 0 0 91.6667%; max-width: 91.6667%; }
+.col-12 { flex: 0 0 100%;     max-width: 100%; }
+
+@media (max-width: 600px) {
+  .col-mob-1  { flex: 0 0 8.3333%;  max-width: 8.3333%; }
+  .col-mob-2  { flex: 0 0 16.6667%; max-width: 16.6667%; }
+  .col-mob-3  { flex: 0 0 25%;      max-width: 25%; }
+  .col-mob-4  { flex: 0 0 33.3333%; max-width: 33.3333%; }
+  .col-mob-5  { flex: 0 0 41.6667%; max-width: 41.6667%; }
+  .col-mob-6  { flex: 0 0 50%;      max-width: 50%; }
+  .col-mob-7  { flex: 0 0 58.3333%; max-width: 58.3333%; }
+  .col-mob-8  { flex: 0 0 66.6667%; max-width: 66.6667%; }
+  .col-mob-9  { flex: 0 0 75%;      max-width: 75%; }
+  .col-mob-10 { flex: 0 0 83.3333%; max-width: 83.3333%; }
+  .col-mob-11 { flex: 0 0 91.6667%; max-width: 91.6667%; }
+  .col-mob-12 { flex: 0 0 100%;     max-width: 100%; }
+}
+/* 
+  Navbar Styles
+*/
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar {
+  width: 100%;
+  background: #fff;
+  color: #222;
+  padding: 1.5rem 0;
+  font-size: 1.15rem;
+  border-bottom: 4px solid #e51566;
+  box-shadow: 0 2px 8px rgba(229, 21, 102, 0.08);
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.navbar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.navbar a {
+  color: #222;
+  text-decoration: none;
+  margin: 0 1.2rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #e51566;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 630px) {
+  .navbar-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar a {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Remove dropdown styles for mobile */
+  .navbar .dropdown,
+  .navbar .dropdown-toggle,
+  .navbar .dropdown-menu {
+    display: none !important;
+  }
+}
+
+
+.site-footer {
+  background: #222;
+  color: #ccc;
+  padding: 32px 0 16px 0;
+  font-size: 0.95rem;
+  margin-top: 40px;
+}
+.footer-top {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.footer-links {
+  display: inline-flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.footer-links a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: #e51566;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.footer-cd {
+  color: #ccc;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
