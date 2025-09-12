@@ -1,8 +1,9 @@
 body {
     margin: 0;
+    background-color: #802BDB;
     padding: 0;
     font-family: 'Inter', Arial, sans-serif;
-    background: #fff;
+
     color: #222;
     min-height: 100vh;
   }
@@ -20,8 +21,7 @@ body {
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: rgb(255, 255, 255);
-  }
+    background: url("https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-b664-61f7-9d82-778f561b5aba/raw?se=2025-09-12T04%3A29%3A40Z&sp=r&sv=2024-08-04&sr=b&scid=3be512c7-715d-5f08-b3f3-327527bface6&skoid=24a7dec3-38fc-4904-b888-8abe0855c442&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-11T05%3A26%3A09Z&ske=2025-09-12T05%3A26%3A09Z&sks=b&skv=2024-08-04&sig=MS0VaJCEHMs15gsCEA2%2BneT97PARLk5s4ZBABkLUGIs%3D");}
   
   .row {
     display: flex;
@@ -96,11 +96,10 @@ body {
 
   .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);;
     gap: 32px;
     padding: 40px;
 }
-/* ...existing code... */
 .card {
     background: #fff;
     border-radius: 12px;
@@ -110,7 +109,8 @@ body {
     transition: box-shadow 0.2s;
 }
 .card img {
-    width: 64px;
-    margin-bottom: 16px;
+    width: 150px;
+    height: auto;
+    margin-bottom: 75px;
 }
-  
+
