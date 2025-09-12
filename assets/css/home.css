@@ -65,7 +65,7 @@
 }
 .game-price {
   font-size: 1.1rem;
-  color: #e48bb2;
+  color: #e51566;
   font-weight: bold;
   margin: 0.5rem 1rem 1rem auto;
 }
@@ -110,7 +110,7 @@
   font-weight: 500;
 }
 .game-list-item .game-price {
-  color: #ff69b4;
+  color: #e51566;
   font-weight: bold;
   font-size: 1rem;
 }
@@ -122,7 +122,7 @@
 }
 .game-tags span {
   background: #f5f5f5;
-  color: #ff69b4;
+  color: #d3648f;
   font-size: 0.85rem;
   padding: 2px 8px;
   border-radius: 12px;
