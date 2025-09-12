@@ -25,6 +25,7 @@ body {
     padding: 30px 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
+    margin-top: 100px;
 }
 
 .container h1 {
@@ -155,4 +156,9 @@ body {
 
 .register-link a:hover {
     text-decoration: underline;
+}
+
+.navbar {
+    position: fixed;
+    top:0;
 }
